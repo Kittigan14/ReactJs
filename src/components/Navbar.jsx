@@ -6,7 +6,7 @@ function Navbar() {
 
       <div className="navbar-container">
 
-      <div className="logo">atomize</div> 
+      <div className="logo">Project</div> 
 
       <ul className="navLinks">
 
@@ -17,7 +17,7 @@ function Navbar() {
         <li>
           <button> Documentation </button>
         </li>
-        
+
       </ul>
 
       </div>
