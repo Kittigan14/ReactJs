@@ -84,9 +84,13 @@
       font-size: 40px;
     }
 
-    .subtitles {
-      margin: 10px;
-      font-size: 14px;
+    input {
+      width: 380px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      outline: 1px solid #dfdfdf;
+      transition: all .5s ease;
     }
 
   }
@@ -110,8 +114,15 @@
     }
 
     .btn-get {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: #6495ED;
       color: #fff;
+
+      .icon {
+        margin: 0 5px;
+      }
     }
 
     .btn-watch {
@@ -121,7 +132,7 @@
       align-items: center;
       outline: 1px solid #dfdfdf;
 
-      .icon-watch {
+      .icon {
         margin: 0 5px;
       }
     }

@@ -1,5 +1,7 @@
 import React from 'react'
-import { SlControlPlay } from "react-icons/sl";
+import { SlClose } from "react-icons/sl";
+import { SlCheck } from "react-icons/sl";
+import { SlPlus } from "react-icons/sl";
 
 function Content() {
   return (
@@ -10,19 +12,22 @@ function Content() {
 
             <div className="content-text">
 
-                <h1 className='title'> Design System for React JS </h1>
-                <p className='subtitles'>
-                    Atomize React is a UI framework that helps developers collaborate with <br />
-                    designers and build consistent user interfaces effortlessly.
-                </p>
+                <h1 className='title'> To Do List </h1>
+
+                <input type="text" placeholder='Add a new tack...' />
+                
 
             </div>
 
             <div className="btn-content">
-                <button className='btn-get' >Get Started Now</button>
+                <button className='btn-get' >
+                    <SlCheck className='icon'/>
+                    Complete
+                </button>
+
                 <button className='btn-watch' >
-                    <SlControlPlay className='icon-watch' />
-                    Watch Video
+                    <SlClose className='icon' />
+                    Incomplete
                 </button>
             </div>
 
