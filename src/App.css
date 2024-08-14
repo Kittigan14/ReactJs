@@ -146,3 +146,38 @@
     }
   }
 }
+
+.to-do-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .bg-to-do {
+    width: 380px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    transition: all .5s ease;
+
+    .btn-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s ease;
+    }
+    
+  }
+
+  .bg-to-do:hover {
+    transform: scale(1.01);
+  }
+
+
+}

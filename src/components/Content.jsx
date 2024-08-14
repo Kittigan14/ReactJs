@@ -4,38 +4,70 @@ import { SlCheck } from "react-icons/sl";
 import { SlPlus } from "react-icons/sl";
 
 function Content() {
-  return (
+return (
 
-    <div>
+<div>
 
-        <div className="content">
+    <div className="content">
 
-            <div className="content-text">
+        <div className="content-text">
 
-                <h1 className='title'> To Do List </h1>
+            <h1 className='title'> To Do List </h1>
 
-                <input type="text" placeholder='Add a new tack...' />
-                
+            <input type="text" placeholder='Add a new tack...' />
+
+
+        </div>
+
+        <div className="btn-content">
+            <button className='btn-get'>
+                <SlCheck className='icon' />
+                Complete
+            </button>
+
+            <button className='btn-watch'>
+                <SlClose className='icon' />
+                Incomplete
+            </button>
+        </div>
+
+        <div className="to-do-list">
+
+            <div className="bg-to-do">
+
+                <p> Project React Js </p>
+
+                <div className="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5m8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                </div>
 
             </div>
 
-            <div className="btn-content">
-                <button className='btn-get' >
-                    <SlCheck className='icon'/>
-                    Complete
-                </button>
+            <div className="bg-to-do">
 
-                <button className='btn-watch' >
-                    <SlClose className='icon' />
-                    Incomplete
-                </button>
+                <p> Project Laravel </p>
+
+                <div className="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-x-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M6.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293z" />
+                    </svg>
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-  )
+</div>
+
+)
 }
 
 export default Content
